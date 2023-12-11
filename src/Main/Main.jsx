@@ -4,11 +4,16 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Pages/Header/Navbar";
 import img from '../assets/sabbir.png'
+import { useEffect } from "react";
+import Typed from "typed.js";
+import Animate from "../Pages/Animate";
 const Main = () => {
+
+  
     return (
         <div className=" flex font-lekton ">
             <Navbar></Navbar>
-            <div className="relative w-[500px] h-[700px] my-[100px] border-[1px] ml-[20px] rounded-xl bg-stone-800  text-white">
+            <div className="relative w-[500px] h-[700px] my-[100px]  ml-[20px] rounded-xl bg-stone-800  text-white shadow-xl shadow-slate-900">
                 <div className='overflow-hidden rounded-lg has-shadow '>
                     <img src='https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
                         className='aspect-video h-[350px] rounded-b-[100px] z-10'
@@ -18,17 +23,14 @@ const Main = () => {
                     </div>
                     <div className='p-4 flex flex-col gap-2 pt-[100px]  text-center  h-[350px] '>
 
-                        <h3 className='text-2xl font-bold'>
+                        <h3 className='text-3xl font-bold'>
                             Shabbir Hossain
                         </h3>
-                        <div className='text-sm'>
-                            <p>
-                                🕹 Customizable and 😍 accessible design system which provides TailwindCSS component className name library to build
-                                modern UI. 💥
-                            </p>
+                        <div className='text-xl text-center w-[200px] mx-auto'>
+                            <Animate></Animate>
                         </div>
                         
-                        <div className="mt-[85px] flex border-t-[1px] border-orange-300 justify-between items-center py-[20px]">
+                        <div className="mt-[60px] flex border-t-[1px] border-orange-300 justify-between items-center py-[20px]">
                             
                             <h1 className="text-white text-center border-r-[1px] border-orange-300 w-[50%]">Download CV</h1>
                             <h1 className="text-white text-center  w-[50%]">Contact</h1>
@@ -36,7 +38,7 @@ const Main = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-[800px] h-[500px] border-[1px] my-auto rounded-xl ml-[20px]">
+            <div className="w-[800px] h-[500px] bg-stone-800  my-auto rounded-xl">
                 <Outlet></Outlet>
             </div>
         </div>
