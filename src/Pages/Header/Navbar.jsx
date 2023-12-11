@@ -9,7 +9,7 @@ const Navbar = () => {
                         <span
                             className="grid h-10 w-10 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600"
                         >
-                            L
+                            SH
                         </span>
                     </div>
 
@@ -41,7 +41,7 @@ const Navbar = () => {
                                     </svg>
 
                                     <span
-                                        className="absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white opacity-0 group-hover:opacity-100"
+                                        className="absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white opacity-0 "
                                     >
                                         General
                                     </span>
@@ -49,11 +49,8 @@ const Navbar = () => {
                             </div>
 
                             <ul className="space-y-1 border-t border-gray-100 py-4">
-                                <li className="space-y-1  border-gray-100 pb-4">
-                                    <a
-                                        href=""
-                                        className="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-                                    >
+                                <li className="space-y-1 border-gray-100 pb-4  flex justify-center items-center flex-col text-center text-gray-500">
+                                  
                                         {/* <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             className="h-5 w-5 opacity-75"
@@ -71,11 +68,11 @@ const Navbar = () => {
                                         <FaUser />
 
                                         <span
-                                            className="absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white opacity-0 group-hover:opacity-100"
+                                            // className="absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white opacity-0 "
                                         >
                                            About Me
                                         </span>
-                                    </a>
+                                    
                                 </li >
 
                                 <li className="space-y-1 border-t border-gray-100 py-4">
