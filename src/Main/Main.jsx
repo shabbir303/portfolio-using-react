@@ -1,7 +1,7 @@
 // import React from 'react';
 
-
-import { Outlet } from "react-router-dom";
+import bg from '../assets/blue-programming-code-background-abstract-footage-090894338_prevstill.webp'
+import { Link, Outlet } from "react-router-dom";
 import Navbar from "../Pages/Header/Navbar";
 import img from '../assets/sabbir.png'
 import { useEffect } from "react";
@@ -11,7 +11,7 @@ const Main = () => {
 
   
     return (
-        <div className=" flex font-lekton ">
+        <div className=" flex font-lekton  bg-cover " >
             <Navbar></Navbar>
             <div className="relative w-[500px] h-[700px] my-[100px]  ml-[20px] rounded-xl bg-stone-800  text-white shadow-xl shadow-slate-900">
                 <div className='overflow-hidden rounded-lg has-shadow '>
@@ -26,14 +26,14 @@ const Main = () => {
                         <h3 className='text-3xl font-bold'>
                             Shabbir Hossain
                         </h3>
-                        <div className='text-xl text-center w-[200px] mx-auto'>
+                        
                             <Animate></Animate>
-                        </div>
+                        
                         
                         <div className="mt-[60px] flex border-t-[1px] border-orange-300 justify-between items-center py-[20px]">
+                            <a className="text-white text-center border-r-[1px] border-orange-300 w-[50%]" href="https://drive.google.com/u/0/uc?id=1QN5H4MuQOnb4S6c_2aA_bOuCKO8HmFTJ&export=download&format=xlsx"><h1 >Download CV</h1></a>
                             
-                            <h1 className="text-white text-center border-r-[1px] border-orange-300 w-[50%]">Download CV</h1>
-                            <h1 className="text-white text-center  w-[50%]">Contact</h1>
+                            <Link className="text-white text-center  w-[50%]" to='/contact'><h1 >Contact</h1></Link>
                         </div>
                     </div>
                 </div>

@@ -4,6 +4,7 @@ import { FaRectangleList } from "react-icons/fa6";
 import { FaEye } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { FaBloggerB } from "react-icons/fa6";
+import { GiSkills } from "react-icons/gi";
 const Navbar = () => {
     return (
         <div>
@@ -60,8 +61,9 @@ const Navbar = () => {
                                         to="/"
                                         style={({ isActive }) => {
                                             return {
-                                                fontWeight: isActive ? "bold" : "",
-                                                color: isActive ? "yellow" : "",
+                                                fontWeight: isActive ? "900" : "",
+                                                color: isActive ? "white" : "",
+                                                
                                                 // textDecoration: isActive ? "underline" : '',
                                                 // fontFamily: isActive ? '':'',
                                                 // fontSize: isActive ?"20px":'18px',
@@ -96,6 +98,27 @@ const Navbar = () => {
                                         <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center flex-col gap-2 text-center text-gray-500">
                                         <FaRectangleList />
                                             Resume
+                                        </span>
+                                    </NavLink>
+                                </li>
+                                <li className="space-y-1 border-t border-gray-700 py-4">
+                                <NavLink
+                                        to="/skills"
+                                        style={({ isActive }) => {
+                                            return {
+                                                fontWeight: isActive ? "bold" : "",
+                                                color: isActive ? "white" : "",
+                                                // textDecoration: isActive ? "underline" : '',
+                                                // fontFamily: isActive ? '':'',
+                                                // fontSize: isActive ?"20px":'18px',
+                                                // fontStyle: isActive ?'italic':''
+                                            };
+                                        }}
+                                    >
+
+                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center flex-col gap-2 text-center text-gray-500">
+                                        <GiSkills />
+                                            Skills
                                         </span>
                                     </NavLink>
                                 </li>
