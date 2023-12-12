@@ -8,9 +8,9 @@ import { GiSkills } from "react-icons/gi";
 const Navbar = () => {
     return (
         <div>
-            <div className="flex ml-[300px] font-lekton uppercase mt-[200px] border-[1px] w-20 gap-5 bg-black py-[15px] rounded-xl flex-col justify-between  ">
+            <div className="flex  lg:ml-[300px] font-lekton uppercase lg:mt-[200px] border-[1px] w-full lg:w-20 gap-5 bg-black lg:py-[15px] rounded-xl flex-row lg:flex-col lg:justify-between  ">
                 <div>
-                    <div className="inline-flex h-16 w-16 items-center justify-center">
+                    <div className=" lg:inline-flex h-16 w-16 items-center justify-center">
                         <span
                             className="grid h-10 w-10 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600 font-bold"
                         >
@@ -18,7 +18,7 @@ const Navbar = () => {
                         </span>
                     </div>
 
-                    <div className="border-t border-gray-700">
+                    <div className="border-t ">
                         <div className="px-2">
                             {/* <div className="py-4">
                                 <a
@@ -53,10 +53,10 @@ const Navbar = () => {
                                 </a>
                             </div> */}
 
-                            <ul className="space-y-1 border-t border-gray-700 py-4">
+                            <ul className="space-x-4 lg:space-y-1  border-t border-gray-700 py-4 flex flex-row lg:flex-col">
 
 
-                                <li >
+                                <li className="space-y-1 lg:space-y-0 sm:border-t lg:border-0 border-gray-700 lg:border-none py-4 lg:py-0">
                                     <NavLink
                                         to="/"
                                         style={({ isActive }) => {
@@ -72,7 +72,7 @@ const Navbar = () => {
                                         }}
                                     >
 
-                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center flex-col text-center text-gray-500">
+                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center lg:flex-col text-center text-gray-500">
                                             <FaUser />
                                             About 
                                         </span>
@@ -95,7 +95,7 @@ const Navbar = () => {
                                         }}
                                     >
 
-                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center flex-col gap-2 text-center text-gray-500">
+                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center lg:flex-col gap-2 text-center text-gray-500">
                                         <FaRectangleList />
                                             Resume
                                         </span>
@@ -116,7 +116,7 @@ const Navbar = () => {
                                         }}
                                     >
 
-                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center flex-col gap-2 text-center text-gray-500">
+                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center lg:flex-col gap-2 text-center text-gray-500">
                                         <GiSkills />
                                             Skills
                                         </span>
@@ -138,7 +138,7 @@ const Navbar = () => {
                                         }}
                                     >
 
-                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center flex-col gap-2 text-center text-gray-500">
+                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center flex-row lg:flex-col gap-2 text-center text-gray-500">
                                         <FaEye />
                                             Works
                                         </span>
@@ -160,7 +160,7 @@ const Navbar = () => {
                                         }}
                                     >
 
-                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center flex-col gap-2 text-center text-gray-500">
+                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center flex-row lg:flex-col gap-2 text-center text-gray-500">
                                         <FaBloggerB />
                                             Blog
                                         </span>

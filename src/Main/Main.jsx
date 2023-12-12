@@ -4,21 +4,20 @@ import bg from '../assets/blue-programming-code-background-abstract-footage-0908
 import { Link, Outlet } from "react-router-dom";
 import Navbar from "../Pages/Header/Navbar";
 import img from '../assets/sabbir.png'
-import { useEffect } from "react";
-import Typed from "typed.js";
+// import { useEffect } from "react";
 import Animate from "../Pages/Animate";
 const Main = () => {
 
   
     return (
-        <div className=" flex font-lekton  bg-cover " >
+        <div className=" lg:flex font-lekton bg-zinc-900  bg-cover " >
             <Navbar></Navbar>
-            <div className="relative w-[500px] h-[700px] my-[100px]  ml-[20px] rounded-xl bg-stone-800  text-white shadow-xl shadow-slate-900">
+            <div className="relative w-full  lg:w-[500px] h-screen lg:h-[700px]  lg:my-[100px]  lg:ml-[20px] rounded-xl bg-stone-800  text-white shadow-xl shadow-slate-900">
                 <div className='overflow-hidden rounded-lg has-shadow '>
-                    <img src='https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
-                        className='aspect-video h-[350px] rounded-b-[100px] z-10'
+                    <img src={bg}
+                        className='aspect-video h-[400px] lg:h-[350px] rounded-b-[100px] z-10'
                         alt='' />
-                    <div className="absolute flex justify-center items-center mx-auto left-[170px]  rounded-full  border-black top-[250px] shadow-xl shadow-orange-300">
+                    <div className="absolute flex justify-center items-center mx-auto left-[140px] lg:left-[170px]  rounded-full  border-black top-[250px] shadow-xl shadow-orange-300">
                         <img src={img} alt="" className="rounded-full h-[170px] bg-amber-500 w-[150px] border-[3px] border-black" />
                     </div>
                     <div className='p-4 flex flex-col gap-2 pt-[100px]  text-center  h-[350px] '>
@@ -38,7 +37,7 @@ const Main = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-[800px] h-[500px] bg-stone-800  my-auto rounded-xl">
+            <div className="lg:w-[800px] lg:h-[500px] bg-stone-800  my-auto rounded-xl overflow-scroll">
                 <Outlet></Outlet>
             </div>
         </div>
