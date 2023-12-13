@@ -11,7 +11,9 @@ const Main = () => {
   
     return (
         <div className=" lg:flex font-lekton bg-zinc-900  bg-cover " >
+            <div className='fixed lg:static sm:top-0 z-10 right-0 left-0 '>
             <Navbar></Navbar>
+            </div>
             <div className="relative w-full  lg:w-[500px] h-screen lg:h-[700px]  lg:my-[100px]  lg:ml-[20px] rounded-xl bg-stone-800  text-white shadow-xl shadow-slate-900">
                 <div className='overflow-hidden rounded-lg has-shadow '>
                     <img src={bg}

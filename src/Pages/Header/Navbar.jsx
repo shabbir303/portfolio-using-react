@@ -62,8 +62,8 @@ const Navbar = () => {
                                         style={({ isActive }) => {
                                             return {
                                                 fontWeight: isActive ? "900" : "",
-                                                color: isActive ? "white" : "",
-                                                
+                                                color: isActive ? "red" : "gray",
+                                                fontSize: isActive ? "20px": "16px",
                                                 // textDecoration: isActive ? "underline" : '',
                                                 // fontFamily: isActive ? '':'',
                                                 // fontSize: isActive ?"20px":'18px',
@@ -72,7 +72,7 @@ const Navbar = () => {
                                         }}
                                     >
 
-                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center lg:flex-col text-center text-gray-500">
+                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center lg:flex-col text-center ">
                                             <FaUser />
                                             About 
                                         </span>
@@ -86,16 +86,16 @@ const Navbar = () => {
                                         style={({ isActive }) => {
                                             return {
                                                 fontWeight: isActive ? "bold" : "",
-                                                color: isActive ? "white" : "",
+                                                color: isActive ? "red" : "gray",
                                                 // textDecoration: isActive ? "underline" : '',
                                                 // fontFamily: isActive ? '':'',
-                                                // fontSize: isActive ?"20px":'18px',
+                                                fontSize: isActive ?"20px":'16px',
                                                 // fontStyle: isActive ?'italic':''
                                             };
                                         }}
                                     >
 
-                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center lg:flex-col gap-2 text-center  text-gray-500">
+                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center lg:flex-col gap-2 text-center  ">
                                         <FaRectangleList />
                                             Resume
                                         </span>
@@ -107,16 +107,16 @@ const Navbar = () => {
                                         style={({ isActive }) => {
                                             return {
                                                 fontWeight: isActive ? "bold" : "",
-                                                color: isActive ? "white" : "",
+                                                color: isActive ? "red" : "gray",
                                                 // textDecoration: isActive ? "underline" : '',
                                                 // fontFamily: isActive ? '':'',
-                                                // fontSize: isActive ?"20px":'18px',
+                                                fontSize: isActive ?"20px":'16px',
                                                 // fontStyle: isActive ?'italic':''
                                             };
                                         }}
                                     >
 
-                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center lg:flex-col gap-2 text-center text-gray-500">
+                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center lg:flex-col gap-2 text-center ">
                                         <GiSkills />
                                             Skills
                                         </span>
@@ -129,16 +129,16 @@ const Navbar = () => {
                                         style={({ isActive }) => {
                                             return {
                                                 fontWeight: isActive ? "bold" : "",
-                                                color: isActive ? "white" : "red",
+                                                color: isActive ? "red" : "gray",
                                                 // textDecoration: isActive ? "underline" : '',
                                                 // fontFamily: isActive ? '':'',
-                                                // fontSize: isActive ?"20px":'18px',
+                                                fontSize: isActive ?"20px":'16px',
                                                 // fontStyle: isActive ?'italic':''
                                             };
                                         }}
                                     >
 
-                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center flex-row lg:flex-col gap-2 text-center text-gray-500">
+                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center flex-row lg:flex-col gap-2 text-center ">
                                         <FaEye />
                                             Works
                                         </span>
@@ -151,16 +151,16 @@ const Navbar = () => {
                                         style={({ isActive }) => {
                                             return {
                                                 fontWeight: isActive ? "bold" : "",
-                                                color: isActive ? "white" : "red",
+                                                color: isActive ? "red" : "gray",
                                                 // textDecoration: isActive ? "underline" : '',
                                                 // fontFamily: isActive ? '':'',
-                                                // fontSize: isActive ?"20px":'18px',
+                                                fontSize: isActive ?"20px":'16px',
                                                 // fontStyle: isActive ?'italic':''
                                             };
                                         }}
                                     >
 
-                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center flex-row lg:flex-col gap-2 text-center text-gray-500">
+                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center flex-row lg:flex-col gap-2 text-center ">
                                         <FaBloggerB />
                                             Blog
                                         </span>
