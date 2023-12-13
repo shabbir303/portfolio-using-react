@@ -4,10 +4,10 @@ const Resume = () => {
     return (
         <>
             <div className="p-[20px] border-b-[0.3px] border-gray-700">
-                <h1 className="text-[20px] font-semibold text-white"><span className="text-amber-600">R</span>ESUME</h1>
+                <h1 className="text-[20px] font-semibold text-white"><span className="text-amber-600 animate-pulse">R</span>ESUME</h1>
             </div>
             <div className="p-[25px] flex flex-col lg:flex-row items-center gap-3 justify-center w-[200px] mx-auto border-b-[1px] border-gray-600 pb-0">
-                <h1 className="w-[40px] h-[40px] border-[2px] text-center text-[35px] border-amber-500 text-amber-500 rounded-full"><GiGraduateCap /></h1> <h1 className="uppercase text-[25px] font-bold text-white">Education</h1>
+                <h1 className="w-[40px] h-[40px] border-[2px] text-center text-[35px] border-amber-500 text-amber-500 rounded-full"><GiGraduateCap /></h1> <h1 className="uppercase text-[25px] font-bold animate-pulse text-white">Education</h1>
             </div>
             <div className="flex items-center border-b-[1px] border-gray-700 ">
                 <div className="w-[50%] border-r-[1px] border-gray-700 pt-[40px] pb-[20px]">

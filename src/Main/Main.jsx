@@ -30,7 +30,7 @@ const Main = () => {
                         
                         
                         <div className="mt-[60px] flex border-t-[1px] border-orange-300 justify-between items-center py-[20px]">
-                            <a className="text-white text-center border-r-[1px] border-orange-300 w-[50%]" href="https://drive.google.com/u/0/uc?id=1QN5H4MuQOnb4S6c_2aA_bOuCKO8HmFTJ&export=download&format=xlsx"><h1 >Download CV</h1></a>
+                            <a className="text-white text-center  border-r-[1px] border-orange-300 w-[50%]" href="https://drive.google.com/u/0/uc?id=1QN5H4MuQOnb4S6c_2aA_bOuCKO8HmFTJ&export=download&format=xlsx"><h1 >Download CV</h1></a>
                             
                             <Link className="text-white text-center  w-[50%]" to='/contact'><h1 >Contact</h1></Link>
                         </div>
