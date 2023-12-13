@@ -8,7 +8,7 @@ import { GiSkills } from "react-icons/gi";
 const Navbar = () => {
     return (
         <div>
-            <div className="flex  lg:ml-[300px] font-lekton uppercase lg:mt-[200px] border-[1px] w-full lg:w-20 gap-5 bg-black lg:py-[15px] rounded-xl flex-row lg:flex-col lg:justify-between  ">
+            <div className="flex  lg:ml-[300px] font-lekton uppercase lg:mt-[200px] border-[1px] border-black w-full lg:w-20 gap-5 bg-black lg:py-[15px] rounded-xl flex-row lg:flex-col lg:justify-between  ">
                 <div>
                     <div className=" lg:inline-flex h-16 w-16 items-center justify-center">
                         <span
@@ -95,7 +95,7 @@ const Navbar = () => {
                                         }}
                                     >
 
-                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center lg:flex-col gap-2 text-center text-gray-500">
+                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center lg:flex-col gap-2 text-center  text-gray-500">
                                         <FaRectangleList />
                                             Resume
                                         </span>
