@@ -1,5 +1,5 @@
 // import React from 'react';
-
+import video from "../assets/video (2160p).mp4"
 import bg from '../assets/blue-programming-code-background-abstract-footage-090894338_prevstill.webp'
 import { Link, Outlet } from "react-router-dom";
 import Navbar from "../Pages/Header/Navbar";
@@ -10,7 +10,10 @@ const Main = () => {
 
   
     return (
-        <div className=" lg:flex font-lekton bg-zinc-900  bg-cover " >
+        <div className=" lg:flex font-lekton bg-[url()] " >
+            {/* <div  >
+            <video src={video} autoPlay muted loop className="video-bg"/>
+            </div> */}
             <div className='fixed lg:static sm:top-0 z-10 right-0 left-0 '>
             <Navbar></Navbar>
             </div>
