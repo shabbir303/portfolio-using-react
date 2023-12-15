@@ -2,6 +2,7 @@
 import video from "../assets/video (2160p).mp4";
 import video1 from "../assets/pexels-gamol-12973197 (1080p).mp4";
 import video2 from "../assets/video (2160p) (1).mp4"
+import video3 from "../assets/video (2160p) (2).mp4"
 import bg from '../assets/blue-programming-code-background-abstract-footage-090894338_prevstill.webp'
 import { Link, Outlet } from "react-router-dom";
 import Navbar from "../Pages/Header/Navbar";
@@ -14,7 +15,7 @@ const Main = () => {
     return (
         <div className=" lg:flex font-lekton relative " >
             <div className="" >
-                <video src={video2} autoPlay muted loop className="absolute top-0 left-0 w-full h-screen object-cover" />
+                <video src={video3} autoPlay muted loop className="absolute top-0 left-0 w-full h-screen object-cover" />
             </div>
             <div className='fixed  sm:top-0 z-10 right-0 left-0 lg:relative'>
                 <Navbar></Navbar>
