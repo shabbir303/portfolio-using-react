@@ -9,7 +9,7 @@ import { TypeAnimation } from "react-type-animation";
 const Animate = () => {
    
   return (
-    <div>
+    <div >
       <span className=" flex justify-center border-none text-[18px] font-[500] text-orange-400 text-center mx-auto ">
 
         <TypeAnimation

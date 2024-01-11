@@ -3,7 +3,11 @@ import { GiGraduateCap } from "react-icons/gi";
 const Resume = () => {
     return (
         <>
-            <div className="p-[20px] border-b-[0.3px] border-gray-700">
+           <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+
+           <div className="p-[20px] border-b-[0.3px] border-gray-700">
                 <h1 className="text-[20px] font-semibold text-white"><span className="text-amber-600 animate-pulse">R</span>ESUME</h1>
             </div>
             <div className="p-[25px] flex flex-col lg:flex-row items-center gap-3 justify-center w-[200px] mx-auto border-b-[1px] border-gray-600 pb-0">
@@ -26,6 +30,7 @@ const Resume = () => {
                     <a className="text-center text-[18px] font-bold text-white flex justify-center pt-2" href="">Certificate</a>
                 </div>
             </div>
+           </div>
         </>
     );
 };

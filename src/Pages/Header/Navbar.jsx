@@ -5,9 +5,17 @@ import { FaEye } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { FaBloggerB } from "react-icons/fa6";
 import { GiSkills } from "react-icons/gi";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "../../App.css"
+
 const Navbar = () => {
+    const styles = {
+        // other styles
+        background: "white",
+        // other styles
+    };
+
     AOS.init();
 
     // You can also pass an optional settings object
@@ -15,33 +23,29 @@ const Navbar = () => {
     AOS.init({
         // Global settings:
         disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-        initClassName: 'aos-init', // class applied after initialization
-        animatedClassName: 'aos-animate', // class applied on animation
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
         useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
         disableMutationObserver: false, // disables automatic mutations' detections (advanced)
         debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
         throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
-
         // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
         offset: 120, // offset (in px) from the original trigger point
         delay: 0, // values from 0 to 3000, with step 50ms
         duration: 400, // values from 0 to 3000, with step 50ms
-        easing: 'ease', // default easing for AOS animations
+        easing: "ease", // default easing for AOS animations
         once: false, // whether animation should happen only once - while scrolling down
         mirror: false, // whether elements should animate out while scrolling past them
-        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
     });
     return (
         <div>
             <div className="flex  lg:ml-[300px] font-lekton uppercase lg:mt-[200px] border-[1px] border-black w-full lg:w-20 gap-5 bg-black lg:py-[15px] rounded-xl flex-row lg:flex-col lg:justify-between  ">
                 <div>
                     <div className=" lg:inline-flex h-16 w-16 items-center justify-center">
-                        <span
-                            className="grid h-10 w-10 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600 font-bold"
-                        >
+                        <span className="grid h-10 w-10 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600 font-bold">
                             SH
                         </span>
                     </div>
@@ -82,31 +86,36 @@ const Navbar = () => {
                             </div> */}
 
                             <ul className="space-x-4 lg:space-y-1  border-t border-gray-700 py-4 flex flex-row lg:flex-col">
+                                {/* <li className="space-y-1 lg:space-y-0 sm:border-t lg:border-0 border-gray-700 lg:border-none py-4 lg:py-0">
+                  <NavLink
+                    className={styles}
+                    to="/"
+                    style={({ isActive }) => {
+                      return {
+                        fontWeight: isActive ? "900" : "",
+                        color: isActive ? "red" : "gray",
+                        fontSize: isActive ? "20px" : "16px",
+                        background: isActive ? " white" : "none",
+                        // textDecoration: isActive ? "underline" : '',
+                        // fontFamily: isActive ? '':'',
+                        // fontSize: isActive ?"20px":'18px',
+                        // fontStyle: isActive ?'italic':''
+                      };
+                    }}
+                  >
+                    <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center lg:flex-col text-center ">
+                      <FaUser />
+                      About
+                    </span>
+                  </NavLink>
+                </li> */}
 
-
-                                <li className="space-y-1 lg:space-y-0 sm:border-t lg:border-0 border-gray-700 lg:border-none py-4 lg:py-0">
-                                    <NavLink
-                                        to="/"
-                                        style={({ isActive }) => {
-                                            return {
-                                                fontWeight: isActive ? "900" : "",
-                                                color: isActive ? "red" : "gray",
-                                                fontSize: isActive ? "20px" : "16px",
-                                                // textDecoration: isActive ? "underline" : '',
-                                                // fontFamily: isActive ? '':'',
-                                                // fontSize: isActive ?"20px":'18px',
-                                                // fontStyle: isActive ?'italic':''
-                                            };
-                                        }}
-                                    >
-
-                                        <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center lg:flex-col text-center ">
-                                            <FaUser />
-                                            About
-                                        </span>
-                                    </NavLink>
-                                </li >
-
+                                <li><NavLink className='hover:btn-secondary rounded-md hover:text-white active:bg-primary active:text-white' to='/'>
+                                    <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center lg:flex-col text-center ">
+                                        <FaUser />
+                                        About
+                                    </span>
+                                </NavLink></li>
 
                                 <li className="space-y-1 border-t border-gray-700 py-4">
                                     <NavLink
@@ -117,12 +126,11 @@ const Navbar = () => {
                                                 color: isActive ? "red" : "gray",
                                                 // textDecoration: isActive ? "underline" : '',
                                                 // fontFamily: isActive ? '':'',
-                                                fontSize: isActive ? "20px" : '16px',
+                                                fontSize: isActive ? "20px" : "16px",
                                                 // fontStyle: isActive ?'italic':''
                                             };
                                         }}
                                     >
-
                                         <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center lg:flex-col gap-2 text-center  ">
                                             <FaRectangleList />
                                             Resume
@@ -138,12 +146,11 @@ const Navbar = () => {
                                                 color: isActive ? "red" : "gray",
                                                 // textDecoration: isActive ? "underline" : '',
                                                 // fontFamily: isActive ? '':'',
-                                                fontSize: isActive ? "20px" : '16px',
+                                                fontSize: isActive ? "20px" : "16px",
                                                 // fontStyle: isActive ?'italic':''
                                             };
                                         }}
                                     >
-
                                         <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center lg:flex-col gap-2 text-center ">
                                             <GiSkills />
                                             Skills
@@ -160,12 +167,11 @@ const Navbar = () => {
                                                 color: isActive ? "red" : "gray",
                                                 // textDecoration: isActive ? "underline" : '',
                                                 // fontFamily: isActive ? '':'',
-                                                fontSize: isActive ? "20px" : '16px',
+                                                fontSize: isActive ? "20px" : "16px",
                                                 // fontStyle: isActive ?'italic':''
                                             };
                                         }}
                                     >
-
                                         <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center flex-row lg:flex-col gap-2 text-center ">
                                             <FaEye />
                                             Works
@@ -182,12 +188,11 @@ const Navbar = () => {
                                                 color: isActive ? "red" : "gray",
                                                 // textDecoration: isActive ? "underline" : '',
                                                 // fontFamily: isActive ? '':'',
-                                                fontSize: isActive ? "20px" : '16px',
+                                                fontSize: isActive ? "20px" : "16px",
                                                 // fontStyle: isActive ?'italic':''
                                             };
                                         }}
                                     >
-
                                         <span className="space-y-1 border-gray-700 pb-4  flex justify-center items-center flex-row lg:flex-col gap-2 text-center ">
                                             <FaBloggerB />
                                             Blog
@@ -198,8 +203,6 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     );
